@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('image/anh1.webp');
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.form {
+    width: 400px;
+    height: 400px;
+    border-radius: 10%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.form h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form input {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+.form button {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: #333;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .form {
+        width: 300px;
+        height: 300px;
+    }
+
+    .form h1 {
+        font-size: 20px;
+    }
+
+    .form input {
+        width: 70%;
+        font-size: 14px;
+    }
+
+    .form button {
+        width: 70%;
+        font-size: 14px;
+    }
+}
